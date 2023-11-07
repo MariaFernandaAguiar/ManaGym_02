@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome_academia: MyString
+  cnpj_academia: MyString
+  quan_alunos: 1
+  endereco_academia: MyString
+
+two:
+  nome_academia: MyString
+  cnpj_academia: MyString
+  quan_alunos: 1
+  endereco_academia: MyString

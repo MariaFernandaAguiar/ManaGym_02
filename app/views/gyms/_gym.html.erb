@@ -1,0 +1,27 @@
+<div id="<%= dom_id gym %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Nome academia:</strong>
+    <%= gym.nome_academia %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Cnpj academia:</strong>
+    <%= gym.cnpj_academia %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Quan alunos:</strong>
+    <%= gym.quan_alunos %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Endereco academia:</strong>
+    <%= gym.endereco_academia %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this gym", gym, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this gym", edit_gym_path(gym), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
