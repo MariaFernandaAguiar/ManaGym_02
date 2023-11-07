@@ -1,0 +1,32 @@
+<div id="<%= dom_id student %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Nome aluno:</strong>
+    <%= student.nome_aluno %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Rg aluno:</strong>
+    <%= student.rg_aluno %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Email aluno:</strong>
+    <%= student.email_aluno %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Data matricula:</strong>
+    <%= student.data_matricula %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Gym:</strong>
+    <%= student.gym_id %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this student", student, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this student", edit_student_path(student), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
