@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quan_maquina: 1
+  tipo_maquina: MyString
+  nome_maquina: MyString
+  gym: one
+
+two:
+  quan_maquina: 1
+  tipo_maquina: MyString
+  nome_maquina: MyString
+  gym: two
