@@ -11,9 +11,11 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+  <body class="flex flex-col overflow-x-hidden bg-slate-200">
+    <%= render "shared/header", class:"fixed" %>   
+  
+    <div class="flex mt-32">
       <%= yield %>
-    </main>
+    </div>
   </body>
 </html>

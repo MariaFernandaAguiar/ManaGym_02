@@ -1,0 +1,32 @@
+<nav
+  class="absolute top-0 left-0 z-20 hidden w-1/2 h-screen py-2 sm:items-center sm:justify-end sm:flex sm:py-0 sm:relative sm:h-auto sm:left-auto sm:top-auto sm:w-full bg-gray-50 sm:bg-transparent"
+  data-nav-target="menu"
+>
+  <div class="flex-col sm:flex">
+    <ul class="flex flex-col items-center justify-center w-full gap-4 sm:flex-row xl:justify-start ">
+      <li>
+        <%= link_to "Início", root_path, class: "text-base text-black hover:text-orange-500 font-bold" %>
+      </li>
+
+      <li>
+        <%= link_to "Academias", gyms_path, class: "text-base text-black hover:text-orange-500 font-bold" %>
+      </li>
+      <li>
+        <%= link_to "Alunos", students_path, class: "text-base text-black hover:text-orange-500 font-bold" %>
+      </li>
+
+      <li>
+        <%= link_to "Funcionários", employees_path, class: "text-base text-black hover:text-orange-500 font-bold" %>
+      </li>
+
+      <li>
+        <%= link_to "Treinos", trainings_path , class: "text-base text-black hover:text-orange-500 font-bold" %>
+      </li>
+
+      <li>
+        <%= link_to "Maquinas", machines_path, class: "text-base text-black hover:text-orange-500 font-bold" %>
+      </li>
+     
+    </ul>
+  </div>
+</nav>

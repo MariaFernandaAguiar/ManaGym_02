@@ -1,2 +1,59 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<section class="flex flex-col items-center justify-center h-full max-w-screen-xl mx-auto md:gap-10">
+
+  <div class="flex flex-col justify-center md:flex-row">
+     <div class="flex flex-col justify-center h-auto p-8 md:w-full md:flex">
+          <h1 class="text-4xl font-bold">Tela Inicial</h1>
+          <div class="grid w-full grid-cols-3 gap-8">
+              
+               
+               <div class="grid items-center h-40 mt-6 text-lg font-semibold text-black border-4 border-orange-400 border-solid rounded-md bg-slate-200 align-center w-96 hover:drop-shadow-xl" ">
+                    <div class="flex items-center">
+                         <%= image_tag "Img2.png", class: "w-40" %>                    
+                         <%= link_to "Academias",
+                              gyms_path,
+                              class: "ml-10" %> 
+                    </div>
+               </div>
+
+                <div class="grid items-center h-40 mt-6 text-lg font-semibold text-black border-4 border-orange-400 border-solid rounded-md bg-slate-200 align-center w-96 hover:drop-shadow-xl" ">
+                    <div class="flex items-center">
+                         <%= image_tag "Img3.png", class: "w-36 mb-2" %>                    
+                         <%= link_to "Alunos",
+                              students_path,
+                              class: "ml-10 " %> 
+                    </div>
+               </div>
+
+               <div class="grid items-center h-40 mt-6 text-lg font-semibold text-black border-4 border-orange-400 border-solid rounded-md bg-slate-200 align-center w-96 hover:drop-shadow-xl" ">
+                    <div class="flex items-center">
+                         <%= image_tag "Img4.png", class: "w-32" %>                    
+                         <%= link_to "Maquina",
+                              machines_path,
+                              class: "ml-10" %> 
+                    </div>
+               </div>
+
+               <div class="grid items-center h-40 mt-6 text-lg font-semibold text-black border-4 border-orange-400 border-solid rounded-md bg-slate-200 align-center w-96 hover:drop-shadow-xl" ">
+                    <div class="flex items-center">
+                         <%= image_tag "Img5.png", class: "w-40" %>                    
+                         <%= link_to "Funcionários",
+                              employees_path,
+                              class: "ml-10" %> 
+                    </div>
+               </div>
+               
+               <div class="grid items-center h-40 mt-6 text-lg font-semibold text-black border-4 border-orange-400 border-solid rounded-md bg-slate-200 align-center w-96 hover:drop-shadow-xl" ">
+                    <div class="flex items-center">
+                         <%= image_tag "Img6.png", class: "w-40" %>                    
+                         <%= link_to "Treinos",
+                              trainings_path,
+                              class: "ml-10 " %> 
+                    </div>
+               </div>
+               
+               
+          </div>
+         
+     </div>
+
+</section>
