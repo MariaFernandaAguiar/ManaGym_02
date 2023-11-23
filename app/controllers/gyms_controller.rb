@@ -8,8 +8,21 @@ class GymsController < ApplicationController
 
   # GET /gyms/1 or /gyms/1.json
   def show
+      
   end
 
+  def search
+    @gym_id = params[:gym_id]
+
+    # Buscar a academia pelo id
+    @gym = Gym.find_by(@gym_id)
+
+    # Buscar os funcionários, treinos, máquinas e alunos dessa academia
+    @employees = Employee.where(gym_id: @gym_id)
+    @machines = Machine.where(gym_id: @gym_id)
+    @students = Student.where(gym_id: @gym_id)
+
+  end
   # GET /gyms/new
   def new
     @gym = Gym.new

@@ -1,27 +1,27 @@
 <div id="<%= dom_id training %>">
   <p class="my-5">
-    <strong class="block font-medium mb-1">Tipo treino:</strong>
+    <strong class="block mb-1 font-medium">Tipo treino:</strong>
     <%= training.tipo_treino %>
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Serie treino:</strong>
+    <strong class="block mb-1 font-medium">Serie treino:</strong>
     <%= training.serie_treino %>
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Repeticoes:</strong>
+    <strong class="block mb-1 font-medium">Repeticoes:</strong>
     <%= training.repeticoes %>
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Student:</strong>
+    <strong class="block mb-1 font-medium">Aluno id:</strong>
     <%= training.student_id %>
   </p>
 
   <% if action_name != "show" %>
-    <%= link_to "Show this training", training, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to "Edit this training", edit_training_path(training), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Ver treino", training, class: "rounded-lg py-3 px-5 bg-orange-400 text-white inline-block font-medium" %>
+    <%= link_to "Editar treino", edit_training_path(training), class: "rounded-lg py-3 ml-2 px-5 bg-orange-400 text-white inline-block font-medium" %>
     <hr class="mt-6">
   <% end %>
 </div>

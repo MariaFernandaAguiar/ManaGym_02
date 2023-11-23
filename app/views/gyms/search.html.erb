@@ -1,0 +1,28 @@
+<div class="flex flex-col p-6 px-32">
+  <div class="flex">
+  <%# Criar um formulário para enviar o id da academia %>
+  <%= form_with url: search_gyms_path, method: :get do |f| %>
+    <p>
+      <label for="gym_id", class="text-2xl ">Digite o id da academia:</label>
+      <%= f.text_field :gym_id, class:"block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    </p>
+    <p class="py-5">
+    <%= f.submit "Pesquisar", class:"rounded-lg py-3 px-3 bg-orange-600 text-white inline-block font-medium cursor-pointer" %>
+    </p>
+  <% end %>
+  </div>
+  <%# Mostrar o resultado da pesquisa se houver %>
+  <div class="">
+  <% if @gym %>
+    <h1 class="text-2xl font-semibold" >Detalhes da academia</h1>
+    <h2 class="py-5 text-xl font-semibold" >Funcionários</h2>
+    <%= render @employees %> 
+    <h2 class="py-5 text-xl font-semibold" >Máquinas</h2>
+    <%= render @machines %>
+    <h2 class="py-5 text-xl font-semibold" >Alunos</h2>
+    <%= render @students %>
+  <% else %>
+    <p class="py-5 text-xl font-semibold">Nenhuma academia encontrada com esse id.</p>
+  <% end %>
+  </div>
+</div>
