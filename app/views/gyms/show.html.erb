@@ -6,10 +6,10 @@
 
     <%= render @gym %>
 
-    <%= link_to "Edit this gym", edit_gym_path(@gym), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Editar Academia", edit_gym_path(@gym), class: "mt-2 rounded-lg py-3 px-5 bg-orange-400 text-white inline-block font-medium" %>
     <div class="inline-block ml-2">
-      <%= button_to "Destroy this gym", gym_path(@gym), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+      <%= button_to "Destruir Academia", gym_path(@gym), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-orange-400 text-white font-medium" %>
     </div>
-    <%= link_to "Back to gyms", gyms_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Voltar para Academias", gyms_path, class: "ml-2 rounded-lg py-3 px-5 bg-orange-400 text-white inline-block font-medium" %>
   </div>
 </div>

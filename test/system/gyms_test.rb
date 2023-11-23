@@ -32,7 +32,7 @@ class GymsTest < ApplicationSystemTestCase
     fill_in "Endereco academia", with: @gym.endereco_academia
     fill_in "Nome academia", with: @gym.nome_academia
     fill_in "Quan alunos", with: @gym.quan_alunos
-    click_on "Update Gym"
+    click_on "Atualizar Academia"
 
     assert_text "Gym was successfully updated"
     click_on "Back"
